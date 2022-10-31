@@ -33,7 +33,7 @@ export const CONTRACT_STATES = {
 
 export const stdlib = loadStdlib({
     ...process.env,
-    'REACH_CONNECTOR_MODE': 'ETH',
+    'REACH_CONNECTOR_MODE': 'ETH', 
 });
 
 // stdlib.setWalletFallback(stdlib.walletFallback({
