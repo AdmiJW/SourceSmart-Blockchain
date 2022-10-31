@@ -33,12 +33,12 @@ export const CONTRACT_STATES = {
 
 export const stdlib = loadStdlib({
     ...process.env,
-    'REACH_CONNECTOR_MODE': 'ALGO',
+    'REACH_CONNECTOR_MODE': 'ETH',
 });
 
-stdlib.setWalletFallback(stdlib.walletFallback({
-    providerEnv: 'TestNet', ALGO_MyAlgoConnect,
-}));
+// stdlib.setWalletFallback(stdlib.walletFallback({
+//     providerEnv: 'TestNet', ALGO_MyAlgoConnect,
+// }));
 
 
 // .env should have two links: REACT_APP_DEV_URL and REACT_APP_PROD_LINK
