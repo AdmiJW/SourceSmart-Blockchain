@@ -4,7 +4,7 @@
 
 
 
-import { loadStdlib, ALGO_MyAlgoConnect } from "@reach-sh/stdlib";
+import { loadStdlib, ALGO_MyAlgoConnect as MyAlgoConnect } from "@reach-sh/stdlib";
 import * as backend from "./reach-backend/index.main.mjs";
 import QrCode from "qrcode";
 
@@ -37,7 +37,7 @@ export const stdlib = loadStdlib({
 });
 
 stdlib.setWalletFallback(stdlib.walletFallback({
-    providerEnv: 'TestNet', ALGO_MyAlgoConnect,
+    providerEnv: 'TestNet', MyAlgoConnect
 }));
 
 
